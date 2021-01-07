@@ -1,4 +1,4 @@
-package com.devsuperior.PMDelivery.entitirs;
+package com.devsuperior.PMDelivery.entity;
 
 public enum OrderStatus {
 
