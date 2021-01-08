@@ -2,7 +2,7 @@ package com.devsuperior.PMDelivery.dto;
 
 import java.io.Serializable;
 
-import com.devsuperior.PMDelivery.entity.Product;
+import com.devsuperior.PMDelivery.entities.Product;
 
 public class ProductDTO implements Serializable {
 	

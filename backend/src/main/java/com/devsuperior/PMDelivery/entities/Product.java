@@ -1,4 +1,4 @@
-package com.devsuperior.PMDelivery.entity;
+package com.devsuperior.PMDelivery.entities;
 
 import java.io.Serializable;
 
