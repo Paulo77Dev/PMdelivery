@@ -1,5 +1,5 @@
 .orders-container {
-  background-color: var(--light-color);
+  background-color: #132A36;
 }
 
 .orders-container h3 {
@@ -9,23 +9,24 @@
 .orders-steps-container {
   display: flex;
   justify-content: center;
-  background-color: r#8ac2e2;
-  margin-bottom: 10px;
+  background-color: #afd3df;
+  margin-bottom: 
+  10px;
 }
 
 .orders-steps-content {
   display: flex;
+  padding: 25px 9;
   width: 50%;
 }
 
 .steps-title {
   font-weight: bold;
-  font-size: 33px;
-  line-height: 33px;
-  letter-spacing: -0.080em;
-  color: var(--secondary-color);
-  margin-right: 30px;
-  margin-left: 100px;
+  font-size: 36px;
+  line-height: 34px;
+  letter-spacing: -0.015em;
+  color: var(--primary-color);
+  margin-right: 100px;
 }
 
 .steps-items {
@@ -36,44 +37,35 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: -0.10em;
-  color: var(--dark-color);
+  letter-spacing: -0.015em;
+  color: var(--secondary-color);
 }
 
 .steps-items .steps-number {
-  font-size: 33px;
+  font-size: 24px;
   font-style: normal;
   font-weight: bold;
   line-height: 33px;
-  letter-spacing: -0.080em;
-  color: var(--secondary-color);
+  letter-spacing: -0.015em;
+  color: var(--primary-color);
   margin-right: 10px;
 }
 
-.products-list-container {
+.orders-list-container {
   display: flex;
   justify-content: center;
 }
 
-.products-list-content {
-  display: flex;
-  justify-content: center;
-  background-color:  #132A36;
-  ;
-  width: 200%;
-}
-
-.products-list-items {
+.orders-list-items {
   width: 70%;
-  padding-top: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 195px);
-  grid-gap: 25px 25px;
+  grid-template-columns: repeat(auto-fill, 235px);
+  grid-gap: 20px 15px;
   justify-content: space-between;
 }
 
-.product-card-container {
-  background-color: #C7E3F3;
+.order-card-container {
+  background-color: #FFF;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 15px;
@@ -91,12 +83,12 @@
   transform: scale(1.01);
 }
 
-.product-card-title {
+.order-card-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
   letter-spacing: -0.015em;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-align: center;
 }
 
@@ -104,19 +96,19 @@
   color: #008E5B;
 }
 
-.product-card-img {
+.order-card-image {
   border-radius: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   width: 100%;
 }
 
-.product-card-price {
+.order-card-price {
   font-weight: bold;
-  font-size: 25px;
-  line-height: -0px;
-  letter-spacing: -0.080em;
-  color: var(--secondary-color);
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: -0.015em;
+  color: var(--primary-color);
   text-align: left;
 }
 
@@ -124,19 +116,16 @@
   color: #008E5B;
 }
 
-.product-card-description {
+.order-card-description {
   border-top: 1px solid #E6E6E6;
-  margin-top: 0px;
-  padding-top: 0px;
-
-  color: var(--dark-color);
-  font-size: 20px;
+  margin-top: 15px;
+  padding-top: 15px;
 }
 
 .order-card-description h3 {
-  font-size: 10px;
-  line-height: 16px;
-  letter-spacing: -0.080em;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.015em;
   color: var(--secondary-color);
 }
 
@@ -155,37 +144,36 @@
 }
 
 .order-location-content {
-  width: 200%;
-  margin: 100px 100px 100;
-  padding: 100px 100;
-  height: 200px;
-  background:  #132A36;
-  box-shadow: 20px 50px 20px rgba(0, 0, 0, 0.25);
-  border-radius: 0px;
+  width: 70%;
+  margin: 30px 0 120px 0;
+  padding: 20px 0;
+  height: 400px;
+  background: #FFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 
 .filter-container {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
-.leaflet-container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  height: 250%;
-  border-radius: 10px;
-  margin-top: 60px;
-  z-index: 0;
-}
 .filter {
   width: 80%;
 }
 
 .filter > div {
-  border-radius: 52px;
-  min-height: 10px;
+  border-radius: 10px;
+  min-height: 60px;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  z-index: 0;
 }
 
 .order-location-title {
@@ -208,7 +196,7 @@
   display: flex;
   justify-content: space-between;
   background: #FFF;
-  box-shadow: 0px 4px 20px rgba(20, 7, 7, 0.25);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   background-color: var(--primary-color);
   color: #FFF;

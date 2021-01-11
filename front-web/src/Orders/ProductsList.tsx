@@ -1,21 +1,40 @@
-import { Product } from './types'
-import ProductsCard from "./ProductCard";
+import { checkIsSelected } from "./helpers";
+import ProductCard from "./ProductCard";
+import { Product } from "./types";
 
 type Props = {
-    products: Product[]; 
+    products: Product[];    
+    selectedProducts: Product[];
+    onSelectProduct: (product: Product) => void;
+
 }
 
-function ProductsList ({ products }: Props) {
+function ProductsList({products, selectedProducts, onSelectProduct}: Props){
     return (
-        <div className="products-list-container">
-            <div className="products-list-content">
-                <div className="products-list-items">
-                    {products.map(product => ( 
-                        <ProductsCard key={product.id} product={product}/>
-                    ))}
-                </div>
-            </div>
-        </div>    
-    );
+
+        <div className="orders-list-container">
+            <div className="orders-list-items">
+             
+             {products.map(product =>(
+                 <ProductCard 
+                 key= {product.id} 
+                 product={product} 
+                 onSelectProduct={onSelectProduct}
+                 isSelected={checkIsSelected(selectedProducts, product)}
+                 />
+             
+             
+             ))}
+
+
+            </div>          
+           
+
+         </div>
+
+    )
+
+
 }
+
 export default ProductsList;
