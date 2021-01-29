@@ -1,5 +1,5 @@
 import './styles.css';
-import {ReactComponent as Logo} from './logo.svg'
+import {ReactComponent as Logo} from './ptlogo.svg'
 import { Link } from 'react-router-dom';
 
 function Navbar(){
