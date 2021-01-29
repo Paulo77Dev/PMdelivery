@@ -7,7 +7,7 @@ import {ReactComponent as InstagramIcon } from './instagram.svg';
 function Footer() {
   return (
     <footer className="main-footer">
-    App desenvolvido por Paulo Madson, na SDS2 2021.
+    App desenvolvido por Paulo Madson, Paragominas - Pa, 2021 -  todos os direitos reservados.
       <div className="footer-icons">
         <a href="https://www.youtube.com/channel/UCEvQ4VKN6d5SrWx6AiSCQOA" target="_new">
        <YouTubeIcon />
